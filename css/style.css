@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Lato");
+body {
+  margin: 0px; }
+
+* {
+  font-family: "Dosis", sans-serif; }
+  * h1, * h2, * h3, * h4 {
+    text-align: center;
+    color: #bdbdbd;
+    font-family: "Lato", sans-serif;
+    font-size: 40px; }
+
+.main-nav-bar, .main-nav-bar-original, .main-nav-bar-scroll {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  height: 70px;
+  line-height: 5; }
+  .main-nav-bar .nav-content, .main-nav-bar-original .nav-content, .main-nav-bar-scroll .nav-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 70%;
+    margin: auto; }
+    .main-nav-bar .nav-content .nav-logo, .main-nav-bar-original .nav-content .nav-logo, .main-nav-bar-scroll .nav-content .nav-logo {
+      width: 50px;
+      height: 38px;
+      position: absolute;
+      left: 48%;
+      top: 1px;
+      background-image: url(/assets/green-hills_coffee_logo.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .main-nav-bar .nav-content .nav-elements, .main-nav-bar-original .nav-content .nav-elements, .main-nav-bar-scroll .nav-content .nav-elements {
+      margin: auto; }
+      .main-nav-bar .nav-content .nav-elements ul, .main-nav-bar-original .nav-content .nav-elements ul, .main-nav-bar-scroll .nav-content .nav-elements ul {
+        text-align: right; }
+        .main-nav-bar .nav-content .nav-elements ul li, .main-nav-bar-original .nav-content .nav-elements ul li, .main-nav-bar-scroll .nav-content .nav-elements ul li {
+          display: inline;
+          margin-left: 20px;
+          font-size: 20px; }
+        .main-nav-bar .nav-content .nav-elements ul a, .main-nav-bar-original .nav-content .nav-elements ul a, .main-nav-bar-scroll .nav-content .nav-elements ul a {
+          text-decoration: none; }
+        .main-nav-bar .nav-content .nav-elements ul a:hover, .main-nav-bar-original .nav-content .nav-elements ul a:hover, .main-nav-bar-scroll .nav-content .nav-elements ul a:hover {
+          color: #acb1b6; }
+
+.main-nav-bar-original .nav-logo {
+  display: none; }
+
+.main-nav-bar-original a {
+  color: black; }
+
+.main-nav-bar-scroll {
+  background-color: black; }
+  .main-nav-bar-scroll .nav-logo {
+    display: block; }
+  .main-nav-bar-scroll a {
+    color: white; }
+
+.header-section {
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  position: relative;
+  overflow: hidden;
+  background-image: url(/assets/coffee-bean.jpg);
+  background-attachment: fixed; }
+  .header-section .main-logo {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 400px;
+    height: 310px;
+    background-image: url(/assets/green-hills_coffee_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .header-section .brand-title {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 60%; }
+    .header-section .brand-title h3 {
+      text-shadow: 4px 3px 5px black;
+      font-size: 50px;
+      color: #aed250; }
+
+.body-section {
+  width: 70%;
+  margin: auto;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  z-index: 2;
+  position: relative; }
+  .body-section .about {
+    margin: auto;
+    width: 100%;
+    height: 450px; }
+    .body-section .about h3 {
+      font-size: 20px;
+      color: #ac822c; }
+  .body-section .products {
+    width: 100%;
+    margin: auto;
+    height: 370px;
+    overflow: hidden; }
+    .body-section .products h1 {
+      margin-bottom: 40px; }
+    .body-section .products .main-product-container {
+      width: 50%;
+      margin: auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .body-section .products .main-product-container .coffee, .body-section .products .main-product-container .black-coffee, .body-section .products .main-product-container .iced-coffee, .body-section .products .main-product-container .mocha-coffee, .body-section .products .main-product-container .vanilla-coffee {
+        height: 200px;
+        width: 100px;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .body-section .products .main-product-container .coffee:hover, .body-section .products .main-product-container .black-coffee:hover, .body-section .products .main-product-container .iced-coffee:hover, .body-section .products .main-product-container .mocha-coffee:hover, .body-section .products .main-product-container .vanilla-coffee:hover {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5); }
+      .body-section .products .main-product-container .black-coffee {
+        background-image: url(/assets/black-coffee.png); }
+      .body-section .products .main-product-container .iced-coffee {
+        background-image: url(/assets/iced-coffee.png); }
+      .body-section .products .main-product-container .mocha-coffee {
+        background-image: url(/assets/mocha-coffee.png); }
+      .body-section .products .main-product-container .vanilla-coffee {
+        background-image: url(/assets/vanilla-latte-coffee.png); }
+  .body-section .contact {
+    width: 100%;
+    height: 350px; }
+
+.footer {
+  width: 100%;
+  height: 75px;
+  background-color: black;
+  position: fixed;
+  bottom: 0; }
+
+span.hash-tag {
+  font-weight: bold;
+  font-size: larger; }
