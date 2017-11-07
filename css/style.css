@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis|Lato");
+html body {
+  margin: 0px;
+  height: 100%;
+  width: 100%; }
+
 body {
-  margin: 0px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 * {
   font-family: "Dosis", sans-serif; }
@@ -9,6 +22,12 @@ body {
     color: #bdbdbd;
     font-family: "Lato", sans-serif;
     font-size: 40px; }
+
+.page-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }
 
 .main-nav-bar, .main-nav-bar-original, .main-nav-bar-scroll {
   z-index: 10;
@@ -75,12 +94,12 @@ body {
   .header-section .main-logo {
     position: absolute;
     top: 25%;
-    left: 30%;
-    width: 400px;
+    width: 100%;
     height: 310px;
     background-image: url(/assets/green-hills_coffee_logo.png);
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: center; }
   .header-section .brand-title {
     width: 100%;
     margin: auto;
@@ -150,11 +169,50 @@ body {
     height: 350px; }
 
 .footer {
+  position: relative;
   width: 100%;
-  height: 75px;
+  height: 230px;
   background-color: black;
-  position: fixed;
-  bottom: 0; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  overflow: hidden;
+  color: #b9b0b0; }
+  .footer .footer-container, .footer .footer-brand, .footer .footer-contact, .footer .footer-media {
+    width: 30%;
+    margin: 10px; }
+    .footer .footer-container ul, .footer .footer-brand ul, .footer .footer-contact ul, .footer .footer-media ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px; }
+    .footer .footer-container h4, .footer .footer-brand h4, .footer .footer-contact h4, .footer .footer-media h4 {
+      font-size: 30px; }
+  .footer .footer-brand {
+    text-align: center; }
+    .footer .footer-brand .footer-logo {
+      margin-bottom: 10px;
+      width: 100%;
+      height: 100px;
+      background-image: url(/assets/green-hills_coffee_logo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+  .footer .footer-contact .contact-icon {
+    font-size: 15px; }
+  .footer .footer-media {
+    text-align: center; }
+    .footer .footer-media li {
+      display: inline;
+      margin-left: 20px; }
+    .footer .footer-media li:hover {
+      cursor: pointer;
+      color: #8d2b0d; }
 
 span.hash-tag {
   font-weight: bold;

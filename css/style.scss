@@ -6,8 +6,14 @@ $second-font:'Dosis', sans-serif;
 
 $font-color-light-green: #aed250;
 $font-color-deep-brown: #ac822c;
-body{
+html body{
     margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 *{
@@ -18,6 +24,9 @@ body{
         font-family: $prime-font;
         font-size: 40px;
     }
+}
+.page-content{
+    flex: 1 0 auto;
 }
 .main-nav-bar{
     z-index: 10;
@@ -97,13 +106,13 @@ body{
     .main-logo{
         position: absolute;
         top: 25%;
-        left: 30%;
-        width: 400px;
+        width: 100%;
         height: 310px;
         background: {
             image: url(/assets/green-hills_coffee_logo.png);
             size: contain;
             repeat: no-repeat;
+            position: center;
         }
     }
     .brand-title{
@@ -197,11 +206,62 @@ body{
 }
 
 .footer{
+    position: relative;
     width: 100%;
-    height: 75px;
+    height: 230px;
     background-color: black;
-    position: fixed;
-    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    color: rgb(185, 176, 176);
+    .footer-container{
+        width: 30%;
+        margin: 10px;
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        h4{
+            font-size: 30px;
+        }
+    }
+    .footer-brand{
+        @extend .footer-container;
+        text-align: center;
+        .footer-logo{
+            margin-bottom: 10px;
+            width: 100%;
+            height: 100px;
+            background: {
+                image: url(/assets/green-hills_coffee_logo.png);
+                size: contain;
+                repeat: no-repeat;
+                position: center;
+            }
+        }
+    }
+    .footer-contact{
+        @extend .footer-container;
+        .contact-icon{
+            font-size: 15px;
+        }
+        
+    }
+    .footer-media{
+        @extend .footer-container;
+        text-align: center;
+        li {
+            display: inline;
+            margin-left: 20px; 
+        }
+        li:hover{
+            cursor: pointer;
+            color: #8d2b0d;
+        }
+
+        
+    }
 }
 
 span.hash-tag{
