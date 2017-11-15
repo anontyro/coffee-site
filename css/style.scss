@@ -4,6 +4,10 @@
 $prime-font: 'Lato', sans-serif;
 $second-font:'Dosis', sans-serif;
 
+$break-small: 550px;
+$break-medium: 820px;
+$break-desktop: 1200px;
+
 $font-color-light-green: #aed250;
 $font-color-deep-brown: #ac822c;
 html body{
@@ -43,6 +47,25 @@ body{
         flex-direction: row;
         width: 70%;
         margin: auto;
+        @media screen and(min-width:$break-small) and (max-width: $break-desktop) {
+            width: 100%;
+            
+        }
+        // @media screen and (max-width: $break-small){
+        //         width: 100%;
+        //         background-color: black;
+        //         .nav-elements > ul{
+        //             margin: 0px;
+        //             padding: 0px;
+        //         }
+        //         .nav-elements > ul > li{
+        //             display: block !important;
+        //             text-align: center;
+        //             height: 60px !important;
+                    
+        //         }
+            
+        // }
         .nav-logo{
             width: 50px;
             height: 38px;
@@ -102,7 +125,7 @@ body{
     z-index: 3;
     position: relative;
     overflow: hidden;
-    margin-bottom: 75px;
+    margin-bottom: 100px;
     background: {
         image: url(/coffee-site/assets/coffee-bean.jpg);
         attachment: fixed;
@@ -216,6 +239,8 @@ body{
     }
     .contact{
         height: 350px;
+        width: 800px;
+        margin: auto;
         margin-bottom: 50px;        
 
         .contact-content{
@@ -239,12 +264,15 @@ body{
     position: relative;
     margin-top: 75px;
     width: 100%;
-    height: 230px;
+    min-height: 230px;
     background-color: black;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     color: rgb(185, 176, 176);
+    @media screen and (max-width: $break-medium) {
+        flex-direction: column;
+    }
     .footer-container{
         width: 30%;
         margin: 10px;
@@ -255,6 +283,9 @@ body{
         }
         h4{
             font-size: 30px;
+        }
+        @media screen and (max-width: $break-medium) {
+            width: 100%;
         }
     }
     .footer-brand{
@@ -274,12 +305,16 @@ body{
     }
     .footer-contact{
         @extend .footer-container;
-        width: 40%;       
+        // width: 40%;       
         ul{
             padding-left: 40px;
         }
         .contact-icon{
             font-size: 15px;
+        }
+        @media screen and (max-width: $break-medium) {
+            padding-left: 0px;
+            text-align: center;
         }
         
     }
@@ -292,7 +327,7 @@ body{
         }
         li:hover{
             cursor: pointer;
-            color: #8d2b0d;
+            color: #484848;
         }
 
         
@@ -303,3 +338,5 @@ span.hash-tag{
     font-weight: bold;
     font-size: larger;
 }
+
+@import "./mediaquery.scss"
