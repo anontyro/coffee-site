@@ -59,7 +59,7 @@ body {
       position: absolute;
       left: 48%;
       top: 1px;
-      background-image: url(/coffee-site/assets/green-hills_coffee_logo.png);
+      background-image: url(./../assets/green-hills_coffee_logo.png);
       background-size: contain;
       background-repeat: no-repeat; }
     .main-nav-bar .nav-content .nav-elements, .main-nav-bar-original .nav-content .nav-elements, .main-nav-bar-scroll .nav-content .nav-elements {
@@ -95,14 +95,14 @@ body {
   position: relative;
   overflow: hidden;
   margin-bottom: 100px;
-  background-image: url(/coffee-site/assets/coffee-bean.jpg);
+  background-image: url(./../assets/coffee-bean.jpg);
   background-attachment: fixed; }
   .header-section .main-logo {
     position: absolute;
     top: 25%;
     width: 100%;
     height: 310px;
-    background-image: url(/coffee-site/assets/green-hills_coffee_logo.png);
+    background-image: url(./../assets/green-hills_coffee_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
@@ -162,13 +162,13 @@ body {
       -ms-transform: scale(1.5);
       transform: scale(1.5); }
     .products .product-holder .main-product-container .black-coffee {
-      background-image: url(/coffee-site/assets/black-coffee.png); }
+      background-image: url(./../assets/black-coffee.png); }
     .products .product-holder .main-product-container .iced-coffee {
-      background-image: url(/coffee-site/assets/iced-coffee.png); }
+      background-image: url(./../assets/iced-coffee.png); }
     .products .product-holder .main-product-container .mocha-coffee {
-      background-image: url(/coffee-site/assets/mocha-coffee.png); }
+      background-image: url(./../assets/mocha-coffee.png); }
     .products .product-holder .main-product-container .vanilla-coffee {
-      background-image: url(/coffee-site/assets/vanilla-latte-coffee.png); }
+      background-image: url(./../assets/vanilla-latte-coffee.png); }
 
 .contact {
   height: 350px;
@@ -224,7 +224,7 @@ body {
       margin-bottom: 10px;
       width: 100%;
       height: 100px;
-      background-image: url(/coffee-site/assets/green-hills_coffee_logo.png);
+      background-image: url(./../assets/green-hills_coffee_logo.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }

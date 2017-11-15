@@ -73,7 +73,7 @@ body{
             left: 48%;
             top: 1px;
             background: {
-                image: url(/coffee-site/assets/green-hills_coffee_logo.png);
+                image: url(./../assets/green-hills_coffee_logo.png);
                 size: contain;
                 repeat: no-repeat;
             }
@@ -127,7 +127,7 @@ body{
     overflow: hidden;
     margin-bottom: 100px;
     background: {
-        image: url(/coffee-site/assets/coffee-bean.jpg);
+        image: url(./../assets/coffee-bean.jpg);
         attachment: fixed;
     } 
     .main-logo{
@@ -136,7 +136,7 @@ body{
         width: 100%;
         height: 310px;
         background: {
-            image: url(/coffee-site/assets/green-hills_coffee_logo.png);
+            image: url(./../assets/green-hills_coffee_logo.png);
             size: contain;
             repeat: no-repeat;
             position: center;
@@ -211,26 +211,26 @@ body{
                 .black-coffee{
                     @extend .coffee;
                     background: {
-                        image: url(/coffee-site/assets/black-coffee.png);
+                        image: url(./../assets/black-coffee.png);
                     }
                 }
                 .iced-coffee{
                     @extend .coffee;
                     background: {
-                        image: url(/coffee-site/assets/iced-coffee.png);
+                        image: url(./../assets/iced-coffee.png);
                     }
                 }
     
                 .mocha-coffee{
                     @extend .coffee;                
                     background: {
-                        image: url(/coffee-site/assets/mocha-coffee.png);
+                        image: url(./../assets/mocha-coffee.png);
                     }
                 }
                 .vanilla-coffee{
                     @extend .coffee;                
                     background: {
-                        image: url(/coffee-site/assets/vanilla-latte-coffee.png);
+                        image: url(./../assets/vanilla-latte-coffee.png);
                     }
                 }
     
@@ -296,7 +296,7 @@ body{
             width: 100%;
             height: 100px;
             background: {
-                image: url(/coffee-site/assets/green-hills_coffee_logo.png);
+                image: url(./../assets/green-hills_coffee_logo.png);
                 size: contain;
                 repeat: no-repeat;
                 position: center;
